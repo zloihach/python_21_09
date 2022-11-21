@@ -9,8 +9,8 @@ y2 = np.float64(data2['y'])
 X2 = data2['X']
 
 C2 = 1.0
-sigma2 = 0.5
+sigma2 = 0.1
 gaussian1 = svm.partial(svm.gaussian_kernel, sigma=sigma2)
 gaussian1.__name__ = svm.gaussian_kernel.__name__
 model2 = svm.svm_train(X2, y2, C2, gaussian1)
-svm.visualize_boundary(X2, y2, model2,title="lab1_8")
+svm.visualize_boundary(X2, y2, model2, title="lab1_8")

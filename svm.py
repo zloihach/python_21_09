@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+# import matplotlib as plt
 import numpy as np
 from collections import namedtuple
 from functools import partial

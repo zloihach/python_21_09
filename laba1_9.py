@@ -30,3 +30,5 @@ gaussian4 = svm.partial(svm.gaussian_kernel, sigma=sigma4)
 gaussian4.__name__ = svm.gaussian_kernel.__name__
 model = svm.svm_train(X2, y2, C4, gaussian4)
 svm.visualize_boundary(X2, y2, model,title="lab1_9")
+svm.visualize_boundary(Xval, yval, model,title="lab1_9_2")
+print("C = " + str(C4) + " sigma = " + str(sigma4))
